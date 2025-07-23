@@ -11,8 +11,6 @@
 
 ## 📋 Tóm tắt
 
-**🔍 Tóm tắt ngắn gọn (150-200 từ):**
-
 Bài viết hướng dẫn cách truy cập và sử dụng **Claude Sonnet 4**, một mô hình AI tiên tiến, trong **Amazon Q Developer CLI** – công cụ dòng lệnh hỗ trợ lập trình viên tăng tốc phát triển phần mềm. Claude Sonnet 4 nổi bật với khả năng lập trình, phân tích mã và suy luận vượt trội, được tích hợp sẵn trong Q Developer CLI từ phiên bản **v1.11.0**, mà **không mất thêm chi phí**.
 
 Người dùng có thể chuyển đổi giữa các mô hình Claude (3.5, 3.7, 4) dễ dàng bằng lệnh `/model`, `--model`, hoặc đặt mặc định trong `q settings`. Bài viết minh họa sức mạnh của Claude Sonnet 4 qua một ví dụ xây dựng ứng dụng quản lý việc cần làm bằng Python – trong đó mô hình không chỉ đáp ứng mà còn mở rộng tính năng một cách thông minh, tạo mã rõ ràng, dễ bảo trì và có tài liệu kèm theo.
