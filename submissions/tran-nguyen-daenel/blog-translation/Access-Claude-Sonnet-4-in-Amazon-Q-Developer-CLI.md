@@ -11,7 +11,7 @@
 
 ## 📋 Tóm tắt
 
-Bài viết này trình bày giải pháp sử dụng GitHub, GitHub Actions workflows, và AWS CodeBuild để xây dựng native container image cho cả x86 và AWS Graviton-based compute trên AWS. Giải pháp tận dụng CodeBuild managed GitHub Actions runners để tự động hóa việc build và push multi-arch image lên Amazon Elastic Container Registry (Amazon ECR). Điều này giúp hỗ trợ đa dạng kiến trúc tính toán và tối ưu hóa hiệu suất trên các nền tảng phần cứng khác nhau.
+Bài viết này giới thiệu về việc tích hợp mô hình AI Claude Sonnet 4 vào Amazon Q Developer CLI, giúp các nhà phát triển nâng cao hiệu quả công việc lập trình, phân tích mã, và sửa lỗi trực tiếp từ dòng lệnh mà không tốn thêm chi phí. Bài viết hướng dẫn cách lựa chọn và chuyển đổi giữa các phiên bản mô hình Claude khác nhau, đồng thời minh họa sức mạnh của Claude Sonnet 4 qua một ví dụ thực tế về việc xây dựng ứng dụng Python, cho thấy khả năng vượt trội so với yêu cầu ban đầu.
 
 **🎯 Đối tượng đọc**: DevOps Engineers, Container Developers, Solutions Architects  
 **📊 Độ khó**: Intermediate  
@@ -19,9 +19,9 @@ Bài viết này trình bày giải pháp sử dụng GitHub, GitHub Actions wor
 
 ---
 
-*Blog này được tác giả bởi Zakiya Randall, Technical Account Manager và đồng tác giả với Muru Bhaskaran, Sr. Specialist Solutions Architect.*
+*Blog này được tác giả bởi Kirankumar Chandrashekar.*
 
-##Giới thiệu
+## Giới thiệu
 
 [Amazon Q Developer](https://aws.amazon.com/vi/q/developer//) hiện hỗ trợ Claude Sonnet 4 trong [CLI](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html), mang đến khả năng lập trình và suy luận tiên tiến cho quy trình phát triển của bạn mà không mất thêm chi phí. Phiên bản mới nhất này vượt trội về khả năng lập trình với tỷ lệ mã hóa agentic đạt 72,7% trên SWE-bench (xem [thông báo về Claude 4 để biết thêm thông tin](https://www.anthropic.com/news/claude-4)). Với khả năng lập trình và suy luận nâng cao, nó giúp bạn phân tích mã phức tạp, tối ưu hóa các tác vụ phát triển hàng ngày, triển khai sửa lỗi, chạy lệnh bash và phát triển các tính năng mới với vòng phản hồi tức thì và phản hồi chính xác hơn.
 
@@ -59,7 +59,7 @@ Q Developer CLI chọn các mô hình theo thứ tự sau:
 
 Trình quản lý CLI của Q Developer sẽ mặc định là Claude Sonnet 3.7 khi không có mô hình cụ thể nào được chọn. Trong các phiên trò chuyện đang diễn ra, bạn có thể dễ dàng chuyển đổi giữa các mô hình bằng `/model` lệnh. Tính liên tục của trò chuyện được duy trì xuyên suốt các phiên, với hệ thống giữ nguyên mô hình đã chọn trước đó khi các cuộc trò chuyện được tiếp tục. Nếu bạn thích Claude Sonnet 4, việc đặt mô hình này làm mô hình mặc định trong cài đặt người dùng sẽ tự động áp dụng cho tất cả các phiên trò chuyện mới, mặc dù điều này có thể được ghi đè bằng các lựa chọn mô hình cụ thể nếu cần.
 
-![Image](https://github.com/user-attachments/assets/8eaa57b9-0951-4785-ac24-885f0fee56da)
+![Image1](https://github.com/user-attachments/assets/915081ad-de8d-48e9-ad74-b13f5ea7fc04)
 
 Hình 1: Q Developer CLI hiển thị mô hình được tải cho phiên
 
@@ -76,8 +76,7 @@ Sau khi chuyển sang Claude Sonnet 4 trong Q Developer CLI, hãy cùng khám ph
 - Store tasks in memory only
 - Please provide the code to implement this application.
 ```
-![image2](model-selection2.4.gif)
-
+![Image](https://github.com/user-attachments/assets/3c94d664-675a-4e44-9980-5cfceebf65bd)
 Hình 2: Giao diện CLI của Q Developer hiển thị Claude Sonnet 4 đang hoạt động
 
 Trong phần trình diễn trên, Q Developer CLI với Claude Sonnet 4 đã vượt xa những gì được yêu cầu trong lời nhắc bằng cách triển khai phân tích cú pháp lệnh tinh vi với các mô tả được trích dẫn, xử lý lỗi toàn diện và thiết kế hướng đối tượng rõ ràng, được tăng cường bởi các gợi ý kiểu. Giao diện có hệ thống hướng dẫn hữu ích với thông báo lỗi rõ ràng, quản lý ưu tiên dựa trên enum tinh tế và đầu ra được định dạng để biểu diễn tác vụ rõ ràng.
