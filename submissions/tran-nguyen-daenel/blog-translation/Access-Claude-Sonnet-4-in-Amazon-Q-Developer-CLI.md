@@ -11,7 +11,7 @@
 
 ## 📋 Tóm tắt
 
-Bài viết này trình bày giải pháp sử dụng GitHub, GitHub Actions workflows, và AWS CodeBuild để xây dựng native container image cho cả x86 và AWS Graviton-based compute trên AWS. Giải pháp tận dụng CodeBuild managed GitHub Actions runners để tự động hóa việc build và push multi-arch image lên Amazon Elastic Container Registry (Amazon ECR). Điều này giúp hỗ trợ đa dạng kiến trúc tính toán và tối ưu hóa hiệu suất trên các nền tảng phần cứng khác nhau.
+Bài viết này giới thiệu về việc tích hợp mô hình AI Claude Sonnet 4 vào Amazon Q Developer CLI, giúp các nhà phát triển nâng cao hiệu quả công việc lập trình, phân tích mã, và sửa lỗi trực tiếp từ dòng lệnh mà không tốn thêm chi phí. Bài viết hướng dẫn cách lựa chọn và chuyển đổi giữa các phiên bản mô hình Claude khác nhau, đồng thời minh họa sức mạnh của Claude Sonnet 4 qua một ví dụ thực tế về việc xây dựng ứng dụng Python, cho thấy khả năng vượt trội so với yêu cầu ban đầu.
 
 **🎯 Đối tượng đọc**: DevOps Engineers, Container Developers, Solutions Architects  
 **📊 Độ khó**: Intermediate  
