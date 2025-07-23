@@ -1,241 +1,103 @@
-# Worklog - Ngày 15/07/2024
+Worklog - Ngày 15/09/2025
+📅 Thông tin cơ bản
+Ngày: 15/09/2025
 
-## 📅 Thông tin cơ bản
-- **Ngày**: 15/07/2024
-- **Thứ**: Thứ Hai
-- **Tuần thực tập**: Tuần thứ 1/8
-- **Thời gian làm việc**: 8:00 - 17:00
-- **Mood**: 😊 Excited và hơi nervous cho ngày đầu tiên
+Thứ: Thứ Hai
 
-## 🎯 Mục tiêu ngày hôm nay
-- [x] Tham gia orientation meeting và hiểu rõ chương trình
-- [x] Setup AWS Free Tier account và basic tools
-- [x] Đọc AWS Cloud Practitioner Essentials - Module 1
-- [ ] Tạo EC2 instance đầu tiên (chưa kịp hoàn thành)
+Tuần thực tập: Tuần thứ 10/10
 
-## 💼 Công việc đã thực hiện
+Thời gian làm việc: 8:00 - 17:30
 
-### 1. Orientation và Program Overview ⏱️ 8:00-10:00
-- **Mô tả**: 
-  - Tham gia meeting với mentor và team
-  - Tìm hiểu về FCJ Internship Program structure
-  - Nhận access vào Slack workspace và GitHub organization
-  - Review timeline và deliverables cho 8 tuần
-- **Kết quả**: 
-  - Hiểu rõ 3 deliverables chính: Worklog, Project Proposal, Blog Translation
-  - Có roadmap chi tiết cho 2 tháng tới
-  - Kết nối với 5 intern khác trong batch
-- **Tools/Tech**: Slack, GitHub, Google Meet, Notion
-- **Links**: 
-  - [Internship Slack Workspace](https://internship.slack.com)
-  - [GitHub Organization](https://github.com/AWS-First-Cloud-Journey)
+Mood: 🚀 The big day! Sẵn sàng cho ngày ra mắt.
 
-### 2. AWS Account Setup và Environment ⏱️ 10:30-12:00
-- **Mô tả**: 
-  - Tạo AWS Free Tier account với email cá nhân
-  - Setup MFA cho root account security
-  - Tạo IAM user với AdministratorAccess policy
-  - Install AWS CLI v2 trên Ubuntu machine
-  - Configure AWS CLI với access keys
-- **Kết quả**: 
-  - AWS account active với $300 credits
-  - IAM user "fcj-intern-user" được tạo thành công
-  - AWS CLI configured và test thành công
-- **Tools/Tech**: AWS Console, AWS CLI, Ubuntu Terminal
-- **Links**: 
-  - [AWS Free Tier Dashboard](https://console.aws.amazon.com/billing/home#/freetier)
-  - [IAM Users Console](https://console.aws.amazon.com/iam/home#/users)
+🎯 Mục tiêu ngày hôm nay
+[x] Thực hiện các bước kiểm tra cuối cùng trong Go-Live Checklist.
 
-### 3. AWS Fundamentals Learning ⏱️ 13:00-15:30
-- **Mô tả**: 
-  - Đọc AWS Cloud Practitioner Essentials Module 1
-  - Tìm hiểu 6 advantages of cloud computing
-  - Học về AWS Global Infrastructure (Regions, AZs, Edge Locations)
-  - Research về different cloud service models (IaaS, PaaS, SaaS)
-  - Take notes và tạo mind map
-- **Kết quả**: 
-  - Hiểu được cloud computing fundamentals
-  - Nắm được AWS global infrastructure với 33 regions, 105 AZs
-  - Tạo được comprehensive notes trong Notion
-- **Tools/Tech**: AWS Training Portal, Notion, Draw.io
-- **Links**: 
-  - [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/)
-  - [My Study Notes](https://notion.so/aws-fundamentals-notes)
+[x] Thực hiện chuyển đổi DNS (DNS Cutover) để trỏ traffic người dùng thật vào hệ thống EKS mới.
 
-### 4. Documentation và Planning ⏱️ 15:30-17:00
-- **Mô tả**: 
-  - Setup GitHub repository structure cho internship
-  - Tạo worklog template và viết entry đầu tiên
-  - Research project proposal ideas và tạo initial list
-  - Plan learning path cho tuần tới
-- **Kết quả**: 
-  - Repository structure hoàn chỉnh với folders cho worklog, proposal, blog
-  - Worklog template được customize theo style cá nhân
-  - List 5 potential project ideas cho proposal
-- **Tools/Tech**: GitHub, VS Code, Markdown
-- **Links**: 
-  - [My Internship Repo](https://github.com/username/fcj-internship)
-  - [Project Ideas Document](https://docs.google.com/document/d/project-ideas)
+[x] Thực hiện các bài kiểm tra "smoke test" trên môi trường production.
 
-## 📚 Kiến thức học được
+[x] Bắt đầu giai đoạn "Hypercare" - giám sát chặt chẽ.
 
-### 🔧 Technical Skills
-- **AWS Services**: 
-  - IAM (Identity and Access Management) - users, roles, policies
-  - AWS Free Tier - limitations và best practices
-  - AWS Global Infrastructure - regions, AZs, edge locations
-- **Programming**: 
-  - Markdown syntax cho documentation
-  - Basic Git commands cho version control
-- **DevOps**: 
-  - AWS CLI installation và configuration
-  - Security best practices với MFA
-- **Architecture**: 
-  - Cloud service models: IaaS, PaaS, SaaS
-  - 6 advantages of cloud computing
+💼 Công việc đã thực hiện
+1. Pre-flight Checks ⏱️ 2.5 giờ
+Mô tả:
 
-### 💡 Concepts & Theory
-- **New Concepts**: 
-  - Elasticity vs Scalability trong cloud
-  - CapEx vs OpEx model
-  - Shared responsibility model
-- **Best Practices**: 
-  - Never use root account cho daily tasks
-  - Always enable MFA
-  - Use least privilege principle cho IAM
-- **Industry Knowledge**: 
-  - Cloud adoption trends trong enterprises
-  - AWS market share và competitors
+Họp nhanh với team (giả định) để rà soát lại kế hoạch.
 
-### 🤝 Soft Skills
-- **Communication**: 
-  - Active listening trong orientation meeting
-  - Asking clarifying questions
-- **Problem Solving**: 
-  - Troubleshooting AWS CLI installation issues
-  - Research skills cho finding documentation
-- **Time Management**: 
-  - Pomodoro technique cho focused learning
-  - Priority matrix cho task planning
-- **Learning**: 
-  - Note-taking strategies với Notion
-  - Mind mapping cho complex concepts
+Đi qua từng hạng mục trong Go-Live Checklist đã tạo ở Tuần 9: kiểm tra lại cấu hình HPA, trạng thái của cluster, health check của ALB, và kế hoạch rollback.
 
-## 🚧 Khó khăn và giải pháp
+Kết quả:
 
-### Vấn đề 1: AWS Console Overwhelming
-- **Mô tả**: AWS Console có quá nhiều services và options, cảm thấy overwhelmed
-- **Impact**: Mất thời gian navigate và tìm đúng service cần dùng
-- **Root Cause**: Lack of familiarity với AWS ecosystem
-- **Solution**: 
-  - Focus vào core services trước: EC2, S3, IAM, VPC
-  - Bookmark frequently used services
-  - Use AWS Console search function
-- **Result**: Navigate nhanh hơn và confident hơn
-- **Lesson**: Start with fundamentals, don't try to learn everything at once
+Toàn đội ngũ đã thống nhất và sẵn sàng. 100% các mục trong checklist tiền triển khai được xác nhận là OK.
 
-### Vấn đề 2: Information Overload
-- **Mô tả**: Quá nhiều thông tin mới trong ngày đầu, khó absorb hết
-- **Impact**: Cảm thấy stress và lo lắng về việc theo kịp
-- **Root Cause**: Trying to learn too much too fast
-- **Solution**: 
-  - Break down learning into smaller chunks
-  - Use spaced repetition technique
-  - Focus on understanding concepts rather than memorizing
-- **Result**: Cảm thấy comfortable hơn với learning pace
-- **Lesson**: Quality over quantity trong learning
+Tools/Tech: Go-Live Checklist (Notion/Google Sheets).
 
-## 💭 Reflection & Insights
+2. Go-Live: DNS Cutover ⏱️ 1.5 giờ
+Mô tả:
 
-### What went well today?
-- Successfully completed orientation và setup cơ bản
-- AWS account setup went smoothly without major issues
-- Good first impression với mentor và team members
-- Established good learning routine với note-taking system
+Thông báo bắt đầu "cửa sổ bảo trì" (simulated).
 
-### What could be improved?
-- Time management - spent too much time on documentation setup
-- Need to be more proactive trong asking questions
-- Should have prepared more questions cho orientation meeting
-- Need better balance between theory và hands-on practice
+Truy cập Amazon Route 53.
 
-### Key Insights
-- **Technical**: AWS ecosystem rộng lớn hơn expected, cần systematic approach
-- **Career**: Cloud computing skills highly valuable trong current job market
-- **Personal**: Learning style works best với combination of reading và hands-on
+Thay đổi bản ghi CNAME của tên miền www.my-ecommerce.com từ Load Balancer cũ sang DNS name của Application Load Balancer mới do EKS quản lý.
 
-### Questions & Curiosities
-- How to choose right AWS region cho different use cases?
-- What's the difference between Security Groups và NACLs?
-- How does AWS pricing work in practice?
-- Best practices cho cost optimization trong Free Tier?
+Giảm giá trị TTL của bản ghi DNS xuống mức thấp (ví dụ: 60 giây) trước đó vài giờ để đảm bảo thay đổi được cập nhật nhanh chóng.
 
-## 📋 Kế hoạch ngày mai
+Kết quả:
 
-### Priority Tasks
-- [ ] **High**: Complete EC2 instance creation và basic configuration
-- [ ] **High**: Finish AWS Cloud Practitioner Module 1 quiz
-- [ ] **Medium**: Start Module 2 - Compute in the Cloud
+DNS cutover được thực hiện thành công.
 
-### Learning Goals
-- [ ] Understand EC2 instance types và use cases
-- [ ] Learn about AMIs và how to launch instances
-- [ ] Explore S3 basics và create first bucket
-- [ ] Read about VPC fundamentals
+Tools/Tech: Amazon Route 53.
 
-### Meetings & Deadlines
-- [ ] Daily standup với team at 9:00 AM
-- [ ] 1-on-1 với mentor at 4:00 PM
-- [ ] Submit worklog by end of day
+Links: [Screenshot: Route 53 record change]
 
-## 📊 Self Assessment
+3. Post-launch Validation & Hypercare ⏱️ 4 giờ
+Mô tả:
 
-### Productivity
-- **Score**: 7/10
-- **Reason**: Accomplished most goals nhưng could be more efficient
-- **Improvement**: Better time blocking và minimize distractions
+Sau khi chuyển đổi DNS, liên tục sử dụng các công cụ như dnschecker.org để kiểm tra quá trình cập nhật DNS trên toàn cầu.
 
-### Learning
-- **Score**: 8/10
-- **New Knowledge**: Solid foundation trong AWS fundamentals
-- **Application**: Need more hands-on practice tomorrow
+Chạy một bộ smoke test đã được chuẩn bị sẵn để kiểm tra các luồng nghiệp vụ quan trọng (đăng nhập, xem sản phẩm, thêm vào giỏ hàng).
 
-### Collaboration
-- **Score**: 6/10
-- **Interactions**: Good start với team nhưng limited interactions
-- **Contributions**: Mostly receiving information today
+Bắt đầu theo dõi chặt chẽ các dashboard đã tạo.
 
-### Overall Satisfaction
-- **Score**: 8/10
-- **Highlights**: Successful first day, clear roadmap, supportive team
-- **Areas for Growth**: Technical depth, hands-on skills, proactive communication
+Kết quả:
 
-## 📎 Attachments & Links
+Hệ thống mới đang phục vụ traffic của người dùng thật.
 
-### Code & Projects
-- [GitHub Repository Setup](https://github.com/username/fcj-internship)
-- [AWS CLI Configuration](https://gist.github.com/username/aws-cli-setup)
+Các chức năng chính hoạt động ổn định.
 
-### Learning Resources
-- [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/)
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Free Tier Guide](https://aws.amazon.com/free/)
+Tools/Tech: dig, nslookup, Postman/Newman.
 
-### Screenshots & Demos
-- ![AWS Console Dashboard](screenshots/aws-console-dashboard.png)
-- ![IAM User Creation](screenshots/iam-user-setup.png)
-- ![AWS CLI Test](screenshots/aws-cli-test.png)
+📚 Kiến thức học được
+🔧 Technical Skills
+AWS Services: Amazon Route 53.
 
----
+DevOps: Go-Live procedures, DNS Cutover, Smoke Testing.
 
-**📝 Notes for tomorrow:**
-- Remember to test EC2 instance creation trong different regions
-- Prepare questions about cost optimization cho mentor meeting
-- Review security best practices trước khi create resources
+💡 Concepts & Theory
+New Concepts: DNS Propagation, Time-To-Live (TTL), Hypercare.
 
-**🎯 Week Progress:**
-Day 1/5 completed. On track với week 1 goals. Need to increase hands-on practice ratio.
+🚧 Khó khăn và giải pháp
+Vấn đề 1: DNS Propagation Delay
 
----
-*Worklog created by: Nguyễn Văn A - FCJ Intern Batch 2024*  
-*Next review: 16/07/2024 - Daily standup*
+Mô tả: Một số người dùng vẫn có thể truy cập vào hệ thống cũ do các DNS server trên thế giới chưa cập nhật bản ghi mới.
+
+Solution: Chấp nhận rằng đây là đặc tính của DNS. Việc giảm TTL trước khi chuyển đổi đã giúp giảm thiểu thời gian này. Sử dụng các công cụ kiểm tra DNS để theo dõi tiến độ.
+
+Lesson: Lên kế hoạch cho việc chuyển đổi DNS là cực kỳ quan trọng.
+
+💭 Reflection & Insights
+Key Insights: Ngày Go-Live là đỉnh cao của nhiều tuần chuẩn bị. Sự thành công của nó không đến từ may mắn, mà đến từ một kế hoạch chi tiết, các bài kiểm thử toàn diện, và một kế hoạch rollback rõ ràng.
+
+📋 Kế hoạch ngày mai
+High: Hypercare - Giám sát chặt chẽ hệ thống trong ngày làm việc đầu tiên có đầy đủ traffic.
+
+Medium: Phản ứng với các cảnh báo (nếu có).
+
+📊 Self Assessment
+Productivity: 10/10
+
+Learning: 9/10
+
+Overall Satisfaction: 10/10

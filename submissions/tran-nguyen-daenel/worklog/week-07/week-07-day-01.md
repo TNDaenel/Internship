@@ -1,88 +1,100 @@
-# Worklog - Ngày 23/06/2025
+Worklog - Ngày 23/06/2025
+📅 Thông tin cơ bản
+Ngày: 23/06/2025
 
-## 📅 Thông tin cơ bản
+Thứ: Thứ Hai
 
-- **Ngày:** 23/06/2025  
-- **Thứ:** Thứ Hai  
-- **Tuần thực tập:** Tuần thứ 7/12  
-- **Thời gian làm việc:** 8:30 - 18:00  
-- **Mood:** ☸️ Bắt đầu một hành trình mới đầy thử thách với Kubernetes.
+Tuần thực tập: Tuần thứ 7/10
 
----
+Thời gian làm việc: 8:00 - 17:30
 
-## 🎯 Mục tiêu ngày hôm nay
+Mood: ☸️ Bắt đầu một hành trình mới đầy thử thách với Kubernetes.
 
-- [x] Hiểu các khái niệm cốt lõi của Kubernetes:
-  - Cluster
-  - Node
-  - Pod
-  - Deployment
-  - Service
-- [x] Cài đặt các công cụ cần thiết:
-  - kubectl
-  - eksctl
-- [x] Sử dụng eksctl để tạo một Amazon EKS (Elastic Kubernetes Service) cluster.
-- [x] Kết nối thành công tới cluster bằng kubectl.
+🎯 Mục tiêu ngày hôm nay
+[x] Hiểu các khái niệm cốt lõi của Kubernetes: Cluster, Node, Pod, Deployment, Service.
 
----
+[x] Cài đặt các công cụ dòng lệnh cần thiết: kubectl, eksctl.
 
-## 💼 Công việc đã thực hiện
+[x] Sử dụng eksctl để tạo một Amazon EKS (Elastic Kubernetes Service) cluster.
 
-### 1. Kubernetes Core Concepts ⏱️ *3.5 giờ*
-   - **Mô tả:**
-     - Hoàn thành module "Introduction to Kubernetes" trên Kubernetes.io.
-     - Vẽ sơ đồ kiến trúc thể hiện mối quan hệ giữa các thành phần Control Plane và Worker Nodes.
-     - Phân biệt rõ sự khác nhau giữa Pod (đơn vị nhỏ nhất) và Deployment (cách quản lý Pods).
-   - **Kết quả:**
-     - Nắm vững các thuật ngữ và kiến trúc cơ bản của Kubernetes.
-   - **Tools/Tech:** Kubernetes Documentation, Draw.io.
+[x] Kết nối thành công tới cluster bằng kubectl để xác nhận.
 
-### 2. EKS Cluster Creation with eksctl** ⏱️ *4.5 giờ*
-   - **Mô tả:**
-     - Cài đặt kubectl (để giao tiếp với cluster) và eksctl (công cụ CLI cấp cao để tạo và quản lý cluster EKS).
-     - Viết một file config YAML đơn giản cho eksctl, định nghĩa tên cluster, region, và loại instance cho các node.
-     - Chạy lệnh `eksctl create cluster -f cluster.yaml`.
-     - Sau khi cluster được tạo (mất khoảng 15-20 phút), eksctl tự động cập nhật file `~/.kube/config`.
-     - Chạy lệnh `kubectl get nodes` để xác nhận kết nối thành công.
-   - **Kết quả:**
-     - Một EKS cluster hoàn chỉnh đang chạy trên AWS.
-     - Có thể tương tác với cluster từ máy local.
-   - **Tools/Tech:** Amazon EKS, eksctl, kubectl.
-   - **Links:**
-     - [cluster.yaml configuration file]
+💼 Công việc đã thực hiện
+1. Kubernetes Core Concepts Deep Dive ⏱️ 3.5 giờ
+Mô tả:
 
----
+Hoàn thành module "Introduction to Kubernetes" trên trang chủ Kubernetes.io.
 
-## 📚 Kiến thức học được
+Vẽ sơ đồ kiến trúc thể hiện mối quan hệ giữa các thành phần Control Plane (API Server, etcd, scheduler, controller manager) và Worker Nodes (kubelet, kube-proxy).
 
-- **Technical Skills:** Kubernetes concepts (Pod, Deployment, Service), Amazon EKS, eksctl, kubectl.
-- **Concepts & Theory:** Container Orchestration, Control Plane vs. Data Plane, Declarative Configuration.
-- **Soft Skills:** Kiên nhẫn (chờ cluster tạo), Quản lý công cụ CLI.
+Phân biệt rõ sự khác nhau giữa Pod (đơn vị nhỏ nhất để chạy container) và Deployment (công cụ quản lý vòng đời của Pods).
 
----
+Kết quả:
 
-## 🚧 Khó khăn và giải pháp
+Nắm vững các thuật ngữ và kiến trúc cơ bản của Kubernetes, tạo nền tảng vững chắc cho các ngày tiếp theo.
 
-- **Vấn đề:** Lệnh `eksctl create cluster` thất bại với lỗi liên quan đến IAM.
-- **Giải pháp:**
-  - Đọc kỹ log lỗi.
-  - Nhận ra user IAM đang sử dụng để chạy eksctl chưa có đủ quyền hạn để tạo các tài nguyên cần thiết (như VPC, IAM Roles, EC2 instances).
-  - Gắn các policy cần thiết (ví dụ: AdministratorAccess trong môi trường dev) và chạy lại thành công.
+Tools/Tech: Kubernetes Documentation, Draw.io.
 
----
+Links: [K8s Architecture Diagram]
 
-## 💭 Reflection & Insights
+2. EKS Cluster Creation with eksctl ⏱️ 4.5 giờ
+Mô tả:
 
-- **Key Insight:** eksctl là một công cụ cực kỳ mạnh mẽ, nó trừu tượng hóa hàng trăm bước cấu hình phức tạp trên CloudFormation để tạo ra một EKS cluster chỉ bằng một câu lệnh. Hiểu được những gì nó làm "phía sau" là rất quan trọng.
+Cài đặt phiên bản mới nhất của kubectl và eksctl.
 
----
+Viết một file config cluster.yaml cho eksctl, định nghĩa tên cluster (e-commerce-prod), region, phiên bản Kubernetes, và cấu hình cho managed node group (ví dụ: 2 instance t3.medium).
 
-## 📋 Kế hoạch ngày mai
+Chạy lệnh eksctl create cluster -f cluster.yaml và theo dõi quá trình CloudFormation tạo tài nguyên.
 
-- **High:** Triển khai ứng dụng container đầu tiên lên EKS bằng Kubernetes Deployments.
-- **Medium:** Viết file manifest YAML đầu tiên.
+Sau khi cluster được tạo, eksctl tự động cập nhật file ~/.kube/config.
 
----
+Chạy lệnh kubectl get nodes để xác nhận kết nối và thấy 2 worker node ở trạng thái Ready.
 
-*Worklog created by: Tran Nguyen Daenel*  
-*Next review: 25/06/2025*
+Kết quả:
+
+Một EKS cluster hoàn chỉnh đang chạy trên AWS.
+
+Môi trường đã sẵn sàng để triển khai ứng dụng.
+
+Tools/Tech: Amazon EKS, eksctl CLI, kubectl CLI, YAML.
+
+Links: [cluster.yaml configuration file on GitHub]
+
+📚 Kiến thức học được
+🔧 Technical Skills
+AWS Services: Amazon EKS.
+
+DevOps Tools: kubectl, eksctl.
+
+Architecture: Kubernetes Control Plane vs. Data Plane.
+
+IaC: Sử dụng eksctl như một công cụ IaC cấp cao.
+
+💡 Concepts & Theory
+New Concepts: Container Orchestration, Pods, Deployments, Services, Nodes.
+
+Best Practices: Sử dụng Managed Node Groups để đơn giản hóa việc quản lý.
+
+🚧 Khó khăn và giải pháp
+Vấn đề 1: Lệnh eksctl create cluster thất bại với lỗi liên quan đến IAM.
+
+Mô tả: eksctl không thể tạo các CloudFormation stack cần thiết do user IAM không đủ quyền.
+
+Solution: Đọc kỹ log lỗi. Gắn các policy cần thiết (ví dụ: AdministratorAccess cho môi trường lab, hoặc các policy chi tiết hơn cho môi trường production) cho user/role đang sử dụng để chạy eksctl.
+
+Lesson: eksctl tạo ra rất nhiều tài nguyên AWS (VPC, IAM Roles, EC2, ASG...), do đó nó đòi hỏi một bộ quyền hạn rất rộng.
+
+💭 Reflection & Insights
+What went well today?: Việc cài đặt công cụ và tạo cluster diễn ra khá suôn sẻ nhờ eksctl.
+
+Key Insights: Kubernetes là một "hệ điều hành cho cloud". eksctl là một công cụ tuyệt vời giúp trừu tượng hóa sự phức tạp của việc thiết lập một cluster K8s trên AWS.
+
+📋 Kế hoạch ngày mai
+High: Triển khai ứng dụng container đầu tiên lên EKS bằng Kubernetes Deployments.
+
+Medium: Viết file manifest YAML đầu tiên cho ứng dụng NodeJS.
+
+📊 Self Assessment
+Productivity: 8/10 (Thời gian chờ tạo cluster khá lâu).
+
+Learning: 9/10.
