@@ -59,7 +59,7 @@ Q Developer CLI chọn các mô hình theo thứ tự sau:
 
 Trình quản lý CLI của Q Developer sẽ mặc định là Claude Sonnet 3.7 khi không có mô hình cụ thể nào được chọn. Trong các phiên trò chuyện đang diễn ra, bạn có thể dễ dàng chuyển đổi giữa các mô hình bằng `/model` lệnh. Tính liên tục của trò chuyện được duy trì xuyên suốt các phiên, với hệ thống giữ nguyên mô hình đã chọn trước đó khi các cuộc trò chuyện được tiếp tục. Nếu bạn thích Claude Sonnet 4, việc đặt mô hình này làm mô hình mặc định trong cài đặt người dùng sẽ tự động áp dụng cho tất cả các phiên trò chuyện mới, mặc dù điều này có thể được ghi đè bằng các lựa chọn mô hình cụ thể nếu cần.
 
-![Image](https://github.com/user-attachments/assets/915081ad-de8d-48e9-ad74-b13f5ea7fc04)
+![Image1](https://github.com/user-attachments/assets/915081ad-de8d-48e9-ad74-b13f5ea7fc04)
 
 Hình 1: Q Developer CLI hiển thị mô hình được tải cho phiên
 
@@ -76,8 +76,7 @@ Sau khi chuyển sang Claude Sonnet 4 trong Q Developer CLI, hãy cùng khám ph
 - Store tasks in memory only
 - Please provide the code to implement this application.
 ```
-![Image](https://github.com/user-attachments/assets/79db7cbf-82f0-468c-b3ce-6ff3f17ed8aa)
-
+![Image](https://github.com/user-attachments/assets/3c94d664-675a-4e44-9980-5cfceebf65bd)
 Hình 2: Giao diện CLI của Q Developer hiển thị Claude Sonnet 4 đang hoạt động
 
 Trong phần trình diễn trên, Q Developer CLI với Claude Sonnet 4 đã vượt xa những gì được yêu cầu trong lời nhắc bằng cách triển khai phân tích cú pháp lệnh tinh vi với các mô tả được trích dẫn, xử lý lỗi toàn diện và thiết kế hướng đối tượng rõ ràng, được tăng cường bởi các gợi ý kiểu. Giao diện có hệ thống hướng dẫn hữu ích với thông báo lỗi rõ ràng, quản lý ưu tiên dựa trên enum tinh tế và đầu ra được định dạng để biểu diễn tác vụ rõ ràng.
