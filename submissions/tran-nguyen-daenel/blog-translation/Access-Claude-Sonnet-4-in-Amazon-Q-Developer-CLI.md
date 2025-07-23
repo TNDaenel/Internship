@@ -11,7 +11,13 @@
 
 ## 📋 Tóm tắt
 
-Bài viết này giới thiệu về việc tích hợp mô hình AI Claude Sonnet 4 vào Amazon Q Developer CLI, giúp các nhà phát triển nâng cao hiệu quả công việc lập trình, phân tích mã, và sửa lỗi trực tiếp từ dòng lệnh mà không tốn thêm chi phí. Bài viết hướng dẫn cách lựa chọn và chuyển đổi giữa các phiên bản mô hình Claude khác nhau, đồng thời minh họa sức mạnh của Claude Sonnet 4 qua một ví dụ thực tế về việc xây dựng ứng dụng Python, cho thấy khả năng vượt trội so với yêu cầu ban đầu.
+**🔍 Tóm tắt ngắn gọn (150-200 từ):**
+
+Bài viết hướng dẫn cách truy cập và sử dụng **Claude Sonnet 4**, một mô hình AI tiên tiến, trong **Amazon Q Developer CLI** – công cụ dòng lệnh hỗ trợ lập trình viên tăng tốc phát triển phần mềm. Claude Sonnet 4 nổi bật với khả năng lập trình, phân tích mã và suy luận vượt trội, được tích hợp sẵn trong Q Developer CLI từ phiên bản **v1.11.0**, mà **không mất thêm chi phí**.
+
+Người dùng có thể chuyển đổi giữa các mô hình Claude (3.5, 3.7, 4) dễ dàng bằng lệnh `/model`, `--model`, hoặc đặt mặc định trong `q settings`. Bài viết minh họa sức mạnh của Claude Sonnet 4 qua một ví dụ xây dựng ứng dụng quản lý việc cần làm bằng Python – trong đó mô hình không chỉ đáp ứng mà còn mở rộng tính năng một cách thông minh, tạo mã rõ ràng, dễ bảo trì và có tài liệu kèm theo.
+
+Tổng kết, **Claude Sonnet 4 trong Amazon Q** là trợ thủ đắc lực cho lập trình viên hiện đại, mang lại trải nghiệm hỗ trợ AI mạnh mẽ, chính xác và linh hoạt ngay từ dòng lệnh.
 
 **🎯 Đối tượng đọc**: DevOps Engineers, Container Developers, Solutions Architects  
 **📊 Độ khó**: Intermediate  
@@ -19,7 +25,6 @@ Bài viết này giới thiệu về việc tích hợp mô hình AI Claude Sonn
 
 ---
 
-*Blog này được tác giả bởi Kirankumar Chandrashekar.*
 
 ## Giới thiệu
 
@@ -77,6 +82,7 @@ Sau khi chuyển sang Claude Sonnet 4 trong Q Developer CLI, hãy cùng khám ph
 - Please provide the code to implement this application.
 ```
 ![Image](https://github.com/user-attachments/assets/3c94d664-675a-4e44-9980-5cfceebf65bd)
+
 Hình 2: Giao diện CLI của Q Developer hiển thị Claude Sonnet 4 đang hoạt động
 
 Trong phần trình diễn trên, Q Developer CLI với Claude Sonnet 4 đã vượt xa những gì được yêu cầu trong lời nhắc bằng cách triển khai phân tích cú pháp lệnh tinh vi với các mô tả được trích dẫn, xử lý lỗi toàn diện và thiết kế hướng đối tượng rõ ràng, được tăng cường bởi các gợi ý kiểu. Giao diện có hệ thống hướng dẫn hữu ích với thông báo lỗi rõ ràng, quản lý ưu tiên dựa trên enum tinh tế và đầu ra được định dạng để biểu diễn tác vụ rõ ràng.
