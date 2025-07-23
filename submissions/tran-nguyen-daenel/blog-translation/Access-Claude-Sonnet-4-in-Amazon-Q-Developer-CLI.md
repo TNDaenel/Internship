@@ -19,9 +19,9 @@ Bài viết này trình bày giải pháp sử dụng GitHub, GitHub Actions wor
 
 ---
 
-*Blog này được tác giả bởi Zakiya Randall, Technical Account Manager và đồng tác giả với Muru Bhaskaran, Sr. Specialist Solutions Architect.*
+*Blog này được tác giả bởi Kirankumar Chandrashekar.*
 
-##Giới thiệu
+## Giới thiệu
 
 [Amazon Q Developer](https://aws.amazon.com/vi/q/developer//) hiện hỗ trợ Claude Sonnet 4 trong [CLI](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html), mang đến khả năng lập trình và suy luận tiên tiến cho quy trình phát triển của bạn mà không mất thêm chi phí. Phiên bản mới nhất này vượt trội về khả năng lập trình với tỷ lệ mã hóa agentic đạt 72,7% trên SWE-bench (xem [thông báo về Claude 4 để biết thêm thông tin](https://www.anthropic.com/news/claude-4)). Với khả năng lập trình và suy luận nâng cao, nó giúp bạn phân tích mã phức tạp, tối ưu hóa các tác vụ phát triển hàng ngày, triển khai sửa lỗi, chạy lệnh bash và phát triển các tính năng mới với vòng phản hồi tức thì và phản hồi chính xác hơn.
 
