@@ -87,7 +87,7 @@ Trong phần trình diễn trên, Q Developer CLI với Claude Sonnet 4 đã vư
 
 Ngoài ra, Q Developer CLI với Claude Sonnet 4 cũng tạo tài liệu trong README cho ứng dụng việc cần làm, bao gồm các ví dụ xử lý lỗi thực tế và hướng dẫn sử dụng rõ ràng – chuyển đổi các yêu cầu nhanh chóng thành một ứng dụng có cấu trúc tốt, thân thiện với người dùng.
 
-### Phần kết luận
+## Phần kết luận
 
 Sự ra mắt của Claude Sonnet 4 đánh dấu một bước tiến đáng kể trong khả năng của Amazon Q Developer. Từ việc tái cấu trúc mã phức tạp đến việc tạo tài liệu một cách hợp lý, Claude Sonnet 4 giúp bạn hoàn thành hiệu quả cả các tác vụ phát triển phức tạp lẫn thông thường.
 
