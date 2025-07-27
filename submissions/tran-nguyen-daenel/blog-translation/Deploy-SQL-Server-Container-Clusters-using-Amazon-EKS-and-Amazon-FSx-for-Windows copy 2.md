@@ -1,6 +1,6 @@
 # Triển khai cụm container SQL Server bằng Amazon EKS và Amazon FSx cho Windows
 
-> **📖 Bài viết gốc**: [Deploy SQL Server Container Clusters using Amazon EKS and Amazon FSx for Windows](https://aws.amazon.com/vi/blogs/modernizing-with-aws/deploy-sql-server-container -clusters-using-amazon-eks-and-amazon-fsx-for-windows/)  
+> **📖 Bài viết gốc**:[Deploy SQL Server Container Clusters using Amazon EKS and Amazon FSx for Windows](https://aws.amazon.com/vi/blogs/modernizing-with-aws/deploy-sql-server-container-clusters-using-amazon-eks-and-amazon-fsx-for-windows/)  
 > **✍️ Tác giả**: Tekena Orugbani  
 > **📅 Ngày xuất bản**: 25 tháng 6, 2025  
 > **🌐 Nguồn**: *Microsoft Workloads on AWS*  
@@ -286,6 +286,7 @@ Bash
 Hình 2: Xem StateFulSet, Pod và Service cho SQL Server
 
 Trong ví dụ này, điểm cuối dịch vụ SQL Server có thể truy cập tại 10.100.40.100. Bây giờ chúng ta có thể kết nối với phiên bản SQL Server bằng các công cụ SQL Server tiêu chuẩn như sqlcmd và SSMS.
+
 
 <img width="690" height="370" alt="Image" src="https://github.com/user-attachments/assets/755b5727-fa44-405b-8364-d79b67d1a32d" />
 Hình 3: Kết nối với vùng chứa SQL Server bằng tiện ích sqlcmd
