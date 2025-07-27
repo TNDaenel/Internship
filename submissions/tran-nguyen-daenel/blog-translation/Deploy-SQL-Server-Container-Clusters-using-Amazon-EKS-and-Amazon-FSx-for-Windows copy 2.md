@@ -289,6 +289,7 @@ Trong ví dụ này, điểm cuối dịch vụ SQL Server có thể truy cập 
 
 
 <img width="690" height="370" alt="Image" src="https://github.com/user-attachments/assets/755b5727-fa44-405b-8364-d79b67d1a32d" />
+
 Hình 3: Kết nối với vùng chứa SQL Server bằng tiện ích sqlcmd
 
 
