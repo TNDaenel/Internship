@@ -1,5 +1,5 @@
 
-# Week 8 Summary - Modern Kubernetes Deployments with GitOps & Helm
+# Week 8 Summary - Deploy e-commerce stack on EC2 + S3 + MongoDB
 
 ## 📊 Tổng quan tuần 8 (30/06/2025 - 04/07/2025)
 
